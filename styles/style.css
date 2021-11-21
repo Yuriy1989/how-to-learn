@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -14,13 +18,119 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  margin: auto;
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/* логотип */
+.header__logo {
+  height: 32px;
+  width: 183px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/logo_place_header.svg);
+  position: absolute;
+  z-index: 3;
+}
+
+/* координаторы логотива на header */
+.header__logo_place {
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  padding: 64px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 3;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  left: 65px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.header__link::after {
+  content: "\279D";
+}
+
+/* картина "Опять двойка" на header */
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+/* синий квадрат на header */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+  z-index: 0;
 }
+
+.content {
+  
+}
+
+.description {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.two-columns {
+  justify-content: space-between;
+  width: 80%;
+  display: flex;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns_span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
