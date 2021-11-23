@@ -91,7 +91,7 @@
 
 .content {
   margin-top: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .description {
@@ -139,6 +139,41 @@
 .two-columns__paragraph_margin {
   margin: 30px 0;
 }
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.section-title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.section-title__facts-and-figures {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section-subtitle {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-subtitle__study-and-brain {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
 
 
 /* и элемента с модификатором вида ключ-значение */
