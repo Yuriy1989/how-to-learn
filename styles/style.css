@@ -28,9 +28,7 @@
 .header__logo {
   height: 32px;
   width: 183px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/logo_place_header.svg);
+  background: url(../images/logo_place_header.svg) no-repeat center;
   position: absolute;
   z-index: 3;
 }
@@ -90,11 +88,11 @@
 }
 
 .content {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 0;
 }
 
 .description {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -144,17 +142,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
 }
 
 .section-title {
   width: 60%;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
 }
 
-.section-title__facts-and-figures {
+.section-title_theme_light {
+  margin: 100px 0 20px 0;
+}
+
+.section-title_theme_dark {
+  color: white;
+  margin-bottom: 20px;
+  padding: 90px  0 0 0;
+}
+
+.section-title__header {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -167,7 +173,11 @@
   justify-content: center;
 }
 
-.section-subtitle__study-and-brain {
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+.section-subtitle__header {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -176,18 +186,39 @@
 
 .table {
   width: 1100px;
+}
 
+.table_theme_light {
+  padding-top: 60px;
+}
+
+ .table_theme_dark {
+  margin-bottom: 90px;
 }
 
 .table__line {
-  padding-top: 60px;
   display: flex;
   justify-content: space-between;
 }
 
 .table__cell {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+}
+
+.table__cell_theme_light {
   width: 250px;
 }
+
+/* оригинальный модификатор с ключом */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
 
 .table__heading {
   line-height: 1.15;
@@ -209,9 +240,7 @@
 
 .feynman {
   height: 890px;
-  background-image: url(../images/feynman.png);
-  background-position: bottom left;
-  background-repeat: no-repeat;
+  background: #f2f2f2 url(../images/feynman.png) no-repeat bottom left;
   background-size: 867px 637px;
   display: flex;
   justify-content: center;
@@ -261,14 +290,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  z-index: -1;
+  width: 877px;
+  height: 877px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 40px 0;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+}
+
+.footer__author::before {
+  content: "\00A9";
 }
 
