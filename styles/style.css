@@ -1,9 +1,11 @@
+/* подключение стилей normalize */
 @import url(./normalize.css);
 
 * {
   border: 1px solid red;
 }
 
+/* основной блок, параметры минимальной и максимальной ширины */
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -15,6 +17,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* блок header */
 .header {
   height: 100vh;
   min-height: 600px;
@@ -26,21 +29,31 @@
   display: flex;
 }
 
-/* логотип */
-.header__logo {
+/* блок логотип */
+.logo {
   height: 32px;
   width: 183px;
-  background: url(../images/logo_place_header.svg) no-repeat center;
-  position: absolute;
-  z-index: 3;
+  z-index: 1;
 }
 
-/* координаторы логотива на header */
-.header__logo_place {
+/* модификатор блока логотипа для header */
+.logo_place_header {
+  background: url(../images/logo_place_header.svg) no-repeat center;
   top: 30px;
   left: 64px;
+  width: 183px;
+  height: 32px;
+  position: absolute;
 }
 
+/* модификатор блока логотипа для footer */
+.logo_place_footer {
+  background: url(../images/logo_place_footer.svg) no-repeat center;
+  width: 183px;
+  height: 35px;
+}
+
+/* элемент header */
 .header__title {
   width: 730px;
   line-height: 96px;
@@ -311,32 +324,40 @@
   justify-content: center;
   padding: 60px 0 40px 0;
   background-color: #1f1f1f;
-  min-height: 350px;
   color: white;
+  min-height: 350px;
+  width: 90%;
 }
 
 .footer__columns {
-  width: 90%;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex-basis: 711px;
 }
 
-.footer__columns_content_copyright {
-  flex-basis: 711px;
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .footer__column_content_info {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
-}
-
-.logo__place_footer {
-
+  align-items: flex-end;
 }
 
 .footer__column-heading {
@@ -346,25 +367,29 @@
   margin: 0 0 20px 0;
 }
 
-.footer__column-links {
+.footer__social-icon {
+  margin: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
-.footer__column-links:nth-of-type(1)::before {
-  content: url(../images/facebook_color_white.svg);
+.footer__column-link:hover {
+  color: #2f80ed;
 }
 
-.footer__column-links:hover {
-  color: #f2f2f2;
-}
-
-.footer__column-link_none {
+.footer__column-links {
   list-style: none;
-  margin: 0;
+  margin: 0 0 16px 0;
   padding: 0;
 }
 
