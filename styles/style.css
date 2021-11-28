@@ -1,10 +1,6 @@
 /* подключение стилей normalize */
 @import url(./normalize.css);
 
-/* * {
-  border: 1px solid red;
-} */
-
 /* основной блок, параметры минимальной и максимальной ширины */
 .page {
   min-width: 1100px;
