@@ -74,10 +74,6 @@
 /* элементу link блока header убираем подчеркивание */
 .header__link {
   text-decoration: none;
-}
-
-/* элементу link блока header меняем цвет ссылки при наведении мыши */
-.header__link:hover {
   color: #2f80ed;
 }
 
@@ -130,16 +126,12 @@
 .two-columns__brief {
   width: 175px;
   display: flex;
-}
-
-/* элемент header-description блока two-columns - параметры загаловка в первом столбце */
-.two-columns__header-description {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 /* элемент main-text блока two-columns - параметры ширины второго столбца */
@@ -190,18 +182,13 @@
 /* модификатор блока section-title - установка отступов и параметры загаловка h2  */
 .section-title_theme_dark {
   color: #fff;
-
 }
 
-/* блок section-subtitle - установка ширины и выраванивания */
+/* блок section-subtitle - установка ширины и выравнивания */
 .section-subtitle {
   width: 60%;
   display: flex;
   justify-content: center;
-}
-
-/* модификатор блока section-subtitle - параметры загаловка h3*/
-.section-subtitle_theme_light {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -221,14 +208,9 @@
 .table {
   width: 1100px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 60px 0 0 0;
   margin: 0;
-}
-
-/* модификатор блока table - настройка внутренних отступов */
-.table_theme_dark {
-  padding: 80px 0 0 0;
 }
 
 /* элементу cell блока table - задаем параметры ширины, вертикальная ось становится основной */
@@ -237,11 +219,13 @@
   width: 250px;
   list-style: none;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 /* модификатор элемента cell блока table - установка ширины */
 .table__cell_theme_dark {
   width: 200px;
+  padding-top: 80px;
 }
 
 /* элементу heading блока table - задаем параметры текста и отступа */
@@ -272,7 +256,7 @@
 
 /* блок feynman - добавление картинки, установка фона, выравнивание элементов */
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background: #f2f2f2 url(../images/feynman.png) no-repeat bottom left;
   background-size: 867px 637px;
   display: flex;
@@ -301,30 +285,22 @@
   text-align: center;
 }
 
-/* элемент link блока feynman - координаты ссылки */
+/* элемент link блока feynman - координаты и параметры ссылки */
 .feynman__link {
   position: absolute;
   top: 50%;
   right: 48px;
   margin: 0;
-}
-
-/* элемент link-text блока feynman - параметры ссылки */
-.feynman__link-text {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+  color: #2f80ed;
 }
 
 /* элемент link-text блока feynman - добавляем стрелку к ссылке */
-.feynman__link-text::after {
+.feynman__link::after {
   content: "\279D";
-}
-
-/* элементу link-text блока feynman - меняем цвет ссылок при наведении мышки */
-.feynman__link-text:hover {
-  color: #2f80ed;
 }
 
 /* блок kaufman - установка фона и выравнивания */
@@ -341,16 +317,22 @@
 
 /* установка синего треульника */
 .kaufman__triangle {
+  background: url(../images/kaufman-triangle.svg) no-repeat;
+  width: 877px;
+  height: 877px;
   position: absolute;
   top: 0;
   right: -210px;
+  bottom: 0;
   z-index: -1;
-  width: 877px;
-  height: 877px;
+  background-size: 877px 877px;
+  margin: 0;
+  padding: 0;
 }
 
 /* настройки блока footer */
 .footer {
+  box-sizing: border-box;
   display: flex;
   padding: 60px 0 40px 0;
   background-color: #1f1f1f;
