@@ -1,0 +1,6 @@
+/* блок description - отступы секции сверху и снизу, выравнивание по центру */
+.description {
+  margin: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+}

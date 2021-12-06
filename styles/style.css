@@ -1,185 +1,20 @@
-* {
-  border: 1px solid red;
-}
 
-/* подключение стилей normalize */
-@import url(./normalize.css);
 
-/* создание анимации синего квадрака */
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-/* основной блок, параметры минимальной и максимальной ширины */
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
 
-/* блок header */
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  margin: auto;
-  background-color: #f2f2f2;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-}
 
-/* блок логотип */
-.logo {
-  background: url(../images/logo_place_header.svg) no-repeat center;
-}
 
-/* модификатор блока логотипа для header */
-.logo_place_header {
-  top: 30px;
-  left: 64px;
-  width: 183px;
-  height: 32px;
-  position: absolute;
-  z-index: 10;
-}
 
-/* модификатор блока логотипа для footer */
-.logo_place_footer {
-  background: url(../images/logo_place_footer.svg) no-repeat center;
-  width: 183px;
-  height: 35px;
-}
 
-/* элемент title блока header */
-.header__title {
-  width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: bold;
-  margin: 0 0 0 64px;
-  display: flex;
-  align-items: center;
-  z-index: 2;
-}
 
-/* элемент subtitle блока header */
-.header__subtitle {
-  position: absolute;
-  width: 388px;
-  bottom: 30px;
-  left: 64px;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  z-index: 2;
-}
 
-/* элементу link блока header убираем подчеркивание */
-.header__link {
-  text-decoration: none;
-  color: #2f80ed;
-  transition: opacity 1s linear;
-}
 
-/* элементу subtitle блока header добавляем стрелочку вправо */
-.header__link::after {
-  content: "\279D";
-}
 
-.header__link:hover {
-  opacity: 0.3;
-}
 
-/* картина "Опять двойка" в блоке header */
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
 
-/* синий квадрат в блоке header */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  position: absolute;
-  top: 64px;
-  right: 0;
-  background-color: #2f80ed;
-  z-index: 0;
-  animation: rotation 20s infinite normal linear;
-}
 
-/* блок content в который включены основные секции */
-.content {
-  padding: 0;
-}
 
-/* блок description - отступы секции сверху и снизу, выравнивание по центру */
-.description {
-  margin: 100px 0 100px 0;
-  display: flex;
-  justify-content: center;
-}
 
-/* блок two-columns - выравнивание столбцов по краям, установка ширины всего блока*/
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
-
-/* элемент brief блока two-columns - параметры ширины первого столбца */
-.two-columns__brief {
-  width: 175px;
-  display: flex;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: #2f80ed;
-  margin: 0;
-  text-align: left;
-}
-
-/* элемент main-text блока two-columns - параметры ширины второго столбца */
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
-}
-
-/* элемент paragraph блока two-columns - параметры текста во втором столбце */
-.two-columns__paragraph {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: 30px 0 0 0;
-}
-
-/* псевдокласс элемента paragraph блока two-columns - убираем верхний внешний отступ первого дочернего элемента */
-.two-columns__paragraph:first-child {
-  margin: 0;
-}
-
-/* элемент span-accent блока two-columns - параметры текста во втором столбце */
-.two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: bold;
-}
 
 /* блок digits */
 .digits {

@@ -1,0 +1,11 @@
+/* элемент brief блока two-columns - параметры ширины первого столбца */
+.two-columns__brief {
+  width: 175px;
+  display: flex;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+  text-align: left;
+}

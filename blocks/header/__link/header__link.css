@@ -1,0 +1,16 @@
+/* элементу link блока header убираем подчеркивание */
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  transition: opacity 1s linear;
+}
+
+/* элементу subtitle блока header добавляем стрелочку вправо */
+.header__link::after {
+  content: "\279D";
+}
+
+/* прозрачность ссылки при наведении мыши */
+.header__link:hover {
+  opacity: 0.3;
+}

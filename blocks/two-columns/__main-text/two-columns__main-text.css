@@ -1,0 +1,5 @@
+/* элемент main-text блока two-columns - параметры ширины второго столбца */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}

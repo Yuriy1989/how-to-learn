@@ -1,0 +1,6 @@
+/* элемент span-accent блока two-columns - параметры текста во втором столбце */
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}

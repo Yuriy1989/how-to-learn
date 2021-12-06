@@ -1,0 +1,6 @@
+/* блок two-columns - выравнивание столбцов по краям, установка ширины всего блока*/
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
