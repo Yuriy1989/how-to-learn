@@ -7,5 +7,5 @@
 1. HTML
 2. CSS
 
-Ссылка на курс: [https://practicum.yandex.ru] (Яндекс Практика)
+Ссылка на курс: [https://practicum.yandex.ru](Яндекс Практика)
 
