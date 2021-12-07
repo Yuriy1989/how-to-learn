@@ -1,0 +1,5 @@
+/* модификатор элемента column блока footer - установка flex шириы и выравнивания */
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,22 @@
+/* элемент link блока feynman - координаты и параметры ссылки */
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  margin: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  transition: opacity 1s linear;
+}
+
+/* элемент link-text блока feynman - добавляем стрелку к ссылке */
+.feynman__link::after {
+  content: "\279D";
+}
+
+.feynman__link:hover {
+  opacity: 0.3;
+}

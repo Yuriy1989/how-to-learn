@@ -1,0 +1,4 @@
+/* настройки элемента column блока footer - установка flex */
+.footer__column {
+  display: flex;
+}

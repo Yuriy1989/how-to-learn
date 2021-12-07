@@ -1,0 +1,7 @@
+/* элементу text блока table - задаем параметры текста и отступа */
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 0 0;
+}

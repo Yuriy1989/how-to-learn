@@ -1,0 +1,8 @@
+/* модификатор блока section-subtitle - установка Белого цвета текста */
+.section-subtitle_theme_dark {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+}

@@ -1,0 +1,4 @@
+/* модификатор элемента heading блока table - установка Белого цвета текста */
+.table__heading_theme_dark {
+  color: #fff;
+}

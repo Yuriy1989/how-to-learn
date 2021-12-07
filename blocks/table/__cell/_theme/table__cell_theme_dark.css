@@ -1,0 +1,5 @@
+/* модификатор элемента cell блока table - установка ширины */
+.table__cell_theme_dark {
+  width: 200px;
+  padding-top: 80px;
+}

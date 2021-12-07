@@ -1,0 +1,8 @@
+/* элементу cell блока table - задаем параметры ширины, вертикальная ось становится основной */
+.table__cell {
+  display: flex;
+  width: 250px;
+  list-style: none;
+  flex-direction: column;
+  padding-top: 60px;
+}

@@ -1,0 +1,10 @@
+/* блок section-title - установка ширины и выраванивания */
+.section-title {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}

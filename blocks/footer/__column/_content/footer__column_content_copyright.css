@@ -1,0 +1,7 @@
+/* модификатор элемента column блока footer - установка flex шириы и выравнивания */
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  flex-direction: column;
+  justify-content: space-between;
+}

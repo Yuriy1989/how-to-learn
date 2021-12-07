@@ -1,0 +1,13 @@
+/* элемент author блока footer - параметры текста и отступов */
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 18px 0;
+  color: white;
+}
+
+/* элементу author блока footer добавляем знак copyright*/
+.footer__author::before {
+  content: "\00A9";
+}

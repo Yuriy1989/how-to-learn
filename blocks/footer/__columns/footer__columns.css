@@ -1,0 +1,6 @@
+/* настройки элемента columns блока footer - установка ширины и выравнивания */
+.footer__columns {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}

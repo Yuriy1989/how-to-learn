@@ -1,0 +1,6 @@
+/* элемент column-links блока footer - убираем точки из списка и настраиваем отступы */
+.footer__column-links {
+  list-style: none;
+  margin: 0 0 16px 0;
+  padding: 0;
+}

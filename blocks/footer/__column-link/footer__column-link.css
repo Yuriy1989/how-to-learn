@@ -1,0 +1,19 @@
+/* элемент column-link блока footer - параметры ссылок */
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: opacity 1s linear;
+}
+
+/* элемент column-link блока footer - цвет ссылок при наведении мышки */
+.footer__column-link:hover {
+  color: #2f80ed;
+  opacity: 0.3;
+}
+
+

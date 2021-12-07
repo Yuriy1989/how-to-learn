@@ -1,0 +1,10 @@
+/* настройки блока footer */
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  padding: 60px 0 40px 0;
+  background-color: #1f1f1f;
+  color: white;
+  min-height: 350px;
+  justify-content: center;
+}
